@@ -87,13 +87,13 @@
 		<h2 class="margin-bottom-60">Make an Enquiry.</h2>
 
 				<form action="https://formspree.io/mariam@foundrycreative.co.nz" method="POST"> <!-- left column of form -->
-					<div class="block-half-left">
+					<div class="block-half-left col-12-1200px">
 						<p class="orange-text margin-bottom-30 margin-top-10-sm">How can we help you?</p>
 						<input type="text" name="_subject" class="input input-subject" placeholder="Subject">
 						<textarea name="body" class="input text-area" placeholder="Your message" required></textarea>	
 					</div>
 						
-					<div class="block-half-right"> <!-- right column of form -->
+					<div class="block-half-right col-12-1200px"> <!-- right column of form -->
 						<p class="orange-text margin-bottom-30">How can we contact you?</p>
 						<input type="text" name="name" class="input input-name" placeholder="Full name" required>
 						<input type="email" name="_replyto" class="input input-email" placeholder="Email address" required>
@@ -115,13 +115,13 @@
 		<h2 class="margin-bottom-60">Request a free appraisal.</h2>
 
 				<form action="https://formspree.io/mariam@foundrycreative.co.nz" method="POST"> <!-- left column of form -->
-					<div class="block-half-left">
+					<div class="block-half-left col-12-1200px">
 						<p class="orange-text margin-bottom-30 margin-top-10-sm">Tell us about your property.</p>
 						<input type="text" name="_subject" class="input input-subject" placeholder="Property address">
 						<textarea name="body" class="input text-area" placeholder="Further information" required></textarea>	
 					</div>
 						
-					<div class="block-half-right"> <!-- right column of form -->
+					<div class="block-half-right col-12-1200px"> <!-- right column of form -->
 						<p class="orange-text margin-bottom-30">How can we contact you?</p>
 						<input type="text" name="name" class="input input-name" placeholder="Full name" required>
 						<input type="email" name="_replyto" class="input input-email" placeholder="Email address" required>
@@ -138,6 +138,268 @@
 
 </div>
 
+
+	<!-- CUSTOM GOOGLE MAP -->
+	<div class="row map-container">
+		<script type="text/javascript">
+			function initialize() {
+
+			  var styles = [
+			    {
+			        "featureType": "all",
+			        "elementType": "labels.text.fill",
+			        "stylers": [
+			            {
+			                "color": "#404040"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "all",
+			        "elementType": "labels.text.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "administrative.country",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "saturation": "86"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "administrative.neighborhood",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "saturation": "44"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "administrative.land_parcel",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "saturation": "-93"
+			            },
+			            {
+			                "lightness": "64"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "saturation": "0"
+			            },
+			            {
+			                "color": "#E8E8E8"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape",
+			        "elementType": "geometry.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape.man_made",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "color": "#F2F2F2"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape.man_made",
+			        "elementType": "geometry.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape.man_made",
+			        "elementType": "labels.text.fill",
+			        "stylers": [
+			            {
+			                "color": "#404040"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape.man_made",
+			        "elementType": "labels.text.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "landscape.natural.landcover",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "saturation": "0"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "color": "#E8E8E8"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi",
+			        "elementType": "labels",
+			        "stylers": [
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi",
+			        "elementType": "labels.text.fill",
+			        "stylers": [
+			            {
+			                "color": "#404040"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi",
+			        "elementType": "labels.text.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi",
+			        "elementType": "labels.icon",
+			        "stylers": [
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "color": "#ffffff"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road",
+			        "elementType": "geometry.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "transit",
+			        "elementType": "geometry.fill",
+			        "stylers": [
+			            {
+			                "color": "#808080"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "transit",
+			        "elementType": "geometry.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "transit",
+			        "elementType": "labels.text.stroke",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+		            "featureType": "water",
+		            "elementType": "geometry",
+		            "stylers": [
+	            		{ 
+	            			"color": "#C7C7C7"
+	            		}
+	            	]
+		        },
+		   	];
+
+
+
+			var styledMap = new google.maps.StyledMapType(styles,
+			    {name: "Styled Map"});
+
+			var mapOptions = {
+				scrollwheel: false,
+			    zoom: 16,
+			    center: new google.maps.LatLng(-41.2585539,174.7845977),
+			    mapTypeControlOptions: {
+			      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+			}};
+
+			var map = new google.maps.Map(document.getElementById('map'),
+			    mapOptions);
+
+			var myLatLng = {lat: -41.2585539, lng: 174.7845977};
+
+			var icon = {
+				path: "M4.8171,4.9014A15.7717,15.7717,0,0,1,16.5,0,15.7717,15.7717,0,0,1,28.1829,4.9014,16.3324,16.3324,0,0,1,33,16.7887a22.8625,22.8625,0,0,1-1.7164,8,49.6229,49.6229,0,0,1-4.1527,8.4507q-2.4362,3.9454-4.8171,7.38-2.3809,3.4384-4.0419,5.4648L16.5,48q-0.6644-.787-1.7718-2.0845-1.1074-1.294-3.9866-5.1831A86.8509,86.8509,0,0,1,5.703,33.1831a55.1339,55.1339,0,0,1-3.9312-8.2817A23.1306,23.1306,0,0,1,0,16.7887,16.3324,16.3324,0,0,1,4.8171,4.9014Zm7.53,16.1127A5.6037,5.6037,0,0,0,16.5,22.7606a5.6037,5.6037,0,0,0,4.1527-1.7465,5.805,5.805,0,0,0,1.7164-4.2254,5.8107,5.8107,0,0,0-1.7164-4.2254A5.61,5.61,0,0,0,16.5,10.8169a5.61,5.61,0,0,0-4.1527,1.7465,5.8107,5.8107,0,0,0-1.7164,4.2254A5.805,5.805,0,0,0,12.3473,21.0141Z",
+	    		fillColor: '#FF4433',
+	    		fillOpacity: 1,
+	    		anchor: new google.maps.Point(16,48),
+	    		strokeWeight: 0,
+	    		scale: 1.2,
+			};
+
+			var marker = new google.maps.Marker({
+			    position: myLatLng,
+			    map: map,
+			    title: 'Haus HQ',
+			    icon: icon,
+			    animation: google.maps.Animation.DROP,
+			});
+
+			map.mapTypes.set('map_style', styledMap);
+			map.setMapTypeId('map_style');};
+		</script>
+		<div id="map"></div> <!-- Apply styles to the containing map div -->
+	</div>
 
 
 <!-- PREFOOTER -->
@@ -162,9 +424,6 @@
 <!-- FOOTER -->
 <div id="footer" class="block slate clearfix padding-top-bottom-80">
 
-
-
-
 	<!-- FOOTER LOGO SECTION -->
 	<div class="block-inner text-align-center margin-bottom-60">
 		<img src="img/logo-footer.svg" id="logo-footer">
@@ -174,54 +433,55 @@
 		<div class="line-divide"></div>
 	</div>
 
-
-
 	<!-- FOOTER DETAILS SECTION -->
 	<div class="block-inner padding-top-60 padding-bottom-60">
 
-		<div class="col-4 text-align-center footer-details">
+		<div class="col-4 col-12-xs margin-bottom-30-xs text-align-center footer-details">
 			<p>04 123 4567<br>info@haus.co.nz</p>
 		</div>
 
-		<div class="col-4 text-align-center footer-details">
+		<div class="col-4 col-12-xs margin-bottom-30-xs text-align-center footer-details">
 			<p>33 Kaiwharawhara Rd<br>Wellington 6027</p>
 		</div>
 
-		<div class="col-4 text-align-center footer-details">
+		<div class="col-4 col-12-xs text-align-center footer-details">
 			<p>PO Box 2345, Johnsonville<br>Wellington 2065</p>
 		</div>
+
 	</div>
 
 	<div class="block-inner">
 		<div class="line-divide"></div>
 	</div>
 
-
-
 	<!-- FOOTER STRAPLINE SECTION -->
 	<div class="block-inner padding-top-60">
-
-		<div class="col-4 text-align-left footer-details">
+		<div class="col-4 col-12-xs margin-bottom-30-xs text-align-center footer-details hidden-xs">
 			<p>© Haus Property Management Ltd.</p>
 		</div>
 
-		<div class="col-4 text-align-center footer-details">
+		<div class="col-4 col-12-xs text-align-center footer-details">
 			<p id="strapline">Property Managed Properly.</p>
 		</div>
 
-		<div class="col-4 text-align-right footer-details">
-			<a href="http://www.foundrycreative.co.nz">
-				<p><img src="img/foundry-footer-logo.svg" id="foundry-footer-logo" target="_blank">
+		<div class="col-4 col-12-xs text-align-center footer-details hidden-xs">
+			<a href="http://www.foundrycreative.co.nz" target="_blank">
+				<p><img src="img/foundry-footer-logo.svg" id="foundry-footer-logo">
 				Design and build by Foundry</p>
 			</a>
 		</div>
 	</div>
+
 </div>
 
 <!-- MOBILE MENU TOGGLE -->
 <script type="text/javascript">
 function resettoggle(){var e=document.getElementById("mobile-nav");e.style.display="none"}function toggle_visibility(e){var l=document.getElementById("mobile-nav");"none"==l.style.display?l.style.display="block":l.style.display="none"}
 </script>
+
+<!-- GOOGLE MAPS -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz2kbka3WK5h_j7xrYaK2DYMJkHgA7NUs&callback=initialize"
+ type="text/javascript"></script>
 
 
 </body>
