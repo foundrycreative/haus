@@ -49,7 +49,7 @@ h1 {
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 416px) {
   h1 {
     font-size: 40px;
     line-height: 46px;
@@ -606,9 +606,15 @@ header ul li a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to right,rgba(255,255,255,.8),rgba(255,255,255,0));
+  background-image: linear-gradient(to right,rgba(255,255,255,.65),rgba(255,255,255,0));
   opacity: 1; 
   }
+
+@media (max-width: 579px) {
+  .header-homepage:before  {
+  background-image: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,0));
+  }
+}
 
 @media (max-width: 1055px) {
   .header-homepage {background-image: url(bgs/header-image-hero-mobile.jpg);}}
@@ -636,7 +642,8 @@ header ul li a {
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 70px;
-  color: #808080; /*75 grey*/
+  /*color: #808080;*/ /*75 grey*/
+  color: #FF4433; /*Orange*/
 }
 
 @media (max-width: 768px) {
@@ -650,7 +657,7 @@ header ul li a {
 @media (max-width: 512px) {
   .header-homepage p {width: 100%;}}
 
-@media (max-width: 580px) {
+@media (max-width: 768px) {
   .header-homepage .button {
     display: block;
     width: 300px;
@@ -682,6 +689,35 @@ header ul li a {
 }
 
 
+/*HIDDEN INTRO BLOCK*/
+
+@media (min-width: 580px) {
+  .hide-580px-up {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (min-width: 580px) {
+  .show-580px-up {
+    visibility: visible;
+    display: all;
+  }
+}
+
+@media (max-width: 579px) {
+.hide-579px-down { 
+  visibility: hidden; 
+  display: none;
+}
+}
+
+@media (max-width: 579px) {
+.show-579px-down { 
+  visibility: visible; 
+  display: all;
+}
+}
 
 
 
@@ -731,6 +767,12 @@ header ul li a {
   .col-12-500px { width: 100%;
 }
 }
+
+@media (max-width: 570px) {
+  .col-12-570px { width: 100%;
+}
+}
+
 
 
 @media (max-width: 940px) {
@@ -873,6 +915,8 @@ header ul li a {
 /*BACKGROUND COLOURS*/
 
 .orange {background-color: #FF4433;}
+.orange-90 {background-color: #FF5747;}
+.orange-80 {background-color: #FF695C;}
 .black-3 {background-color: #F7F7F7}
 .black-5 {background-color: #F7F7F7;}
 .slate {background-color: #404040;}
