@@ -153,9 +153,9 @@ html body{
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
-  -webkit-animation-duration: 0.3s;
-  -moz-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 
@@ -597,6 +597,7 @@ header ul li a {
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #fff;
 }
 
 .header-homepage:before {
@@ -606,8 +607,11 @@ header ul li a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to right,rgba(255,255,255,.65),rgba(255,255,255,0));
-  opacity: 1; 
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+75&1+0,0+75 */
+  background: -moz-linear-gradient(rightright, rgba(255,255,255,.8) 0%, rgba(255,255,255,0) 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(rightright, rgba(255,255,255,.8) 0%,rgba(255,255,255,0) 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,.8) 0%,rgba(255,255,255,0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
   }
 
 @media (max-width: 579px) {
@@ -753,6 +757,7 @@ header ul li a {
 @media (max-width: 1280px) {
   .col-4-sm { width: 33.33%; }
   .col-6-sm { width: 50%; }
+  .col-8-sm { width: 66.66%; }
   .col-12-sm { width: 100%; 
 }
 }
@@ -778,6 +783,14 @@ header ul li a {
 @media (max-width: 940px) {
   .col-6-940px {
     width: 50%;
+    float: left;
+    display: inline-block;
+}
+}
+
+@media (max-width: 1000px) {
+  .col-12-1000px {
+    width: 100%;
     float: left;
     display: inline-block;
 }
@@ -1449,7 +1462,7 @@ form p {font-size: 22px;}
 }
 
 .contact-page-detail:not(:last-child) {
-  margin-right: 200px;
+  margin-right: 198px;
 }
 
 @media (max-width: 1469px) {
