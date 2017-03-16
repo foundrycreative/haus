@@ -109,6 +109,7 @@ http://flickity.metafizzy.co
   height: 12px;
   opacity: .5;
   background: transparent;
+  border-radius: 50%;
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {

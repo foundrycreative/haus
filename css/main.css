@@ -617,8 +617,8 @@ header ul li a {
   bottom: 0;
   left: 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+75&1+0,0+75 */
-  background: -moz-linear-gradient(rightright, rgba(255,255,255,.8) 0%, rgba(255,255,255,0) 80%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(rightright, rgba(255,255,255,.8) 0%,rgba(255,255,255,0) 80%); /* Chrome10-25,Safari5.1-6 */
+  background: -moz-linear-gradient(rightright, rgba(255,255,255,.8) 0%, rgba(255,255,255,0) 70%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(rightright, rgba(255,255,255,.8) 0%,rgba(255,255,255,0) 70%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(255,255,255,.8) 0%,rgba(255,255,255,0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
   }
@@ -1235,6 +1235,8 @@ header ul li a {
 }
 
 
+
+/*OWNERS*/
 /*1*/
 #process-step-1-owners {
   background-image: url(bgs/process-1.svg);
@@ -1406,7 +1408,7 @@ header ul li a {
 #process-step-7-owners:hover {opacity: 0;}
 
 #process-step-7-owners-info {
-  background-image: url(bgs/process-1-owners.jpg);
+  background-image: url(bgs/process-7-owners.jpg);
   opacity: 0;
   transition: .5s;  
   transition-property: all;
@@ -1444,39 +1446,263 @@ header ul li a {
 
 
 
-#process-step-1-tenants {background-image: url(bgs/process-1.svg);}
 
-#process-step-1-tenants:hover {background-image: url();}
 
-#process-step-2-tenants {background-image: url(bgs/process-2.svg);}
+/*TENANTS*/
+/*1*/
+#process-step-1-tenants {
+  background-image: url(bgs/process-1.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute; 
+}
+#process-step-1-tenants:hover {opacity: 0;}
 
-#process-step-3-tenants {background-image: url(bgs/process-3.svg);}
+#process-step-1-tenants-info {
+  background-image: url(bgs/process-1-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  z-index: 10;
+}
+#process-step-1-tenants-info:hover { opacity: 1;}
 
-#process-step-4-tenants {background-image: url(bgs/process-4.svg);}
 
-#process-step-5-tenants {background-image: url(bgs/process-5.svg);}
 
-#process-step-6-tenants {background-image: url(bgs/process-6.svg);}
+/*2*/
+#process-step-2-tenants {
+  background-image: url(bgs/process-2.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-2-tenants:hover {opacity: 0;}
 
-#process-step-7-tenants {background-image: url(bgs/process-7.svg);}
+#process-step-2-tenants-info {
+  background-image: url(bgs/process-2-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+    z-index: 10;
+}
+#process-step-2-tenants-info:hover { opacity: 1;}
 
-#process-step-8-tenants {background-image: url(bgs/process-8.svg);}
+
+
+/*3*/
+#process-step-3-tenants {
+  background-image: url(bgs/process-3.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-3-tenants:hover {opacity: 0;}
+
+#process-step-3-tenants-info {
+  background-image: url(bgs/process-3-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  z-index: 10;
+}
+#process-step-3-tenants-info:hover { opacity: 1;}
+
+
+
+
+/*4*/
+#process-step-4-tenants {
+  background-image: url(bgs/process-4.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-4-tenants:hover {opacity: 0;}
+
+#process-step-4-tenants-info {
+  background-image: url(bgs/process-4-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+    z-index: 10;
+}
+#process-step-4-tenants-info:hover { opacity: 1;}
+
+
+/*5*/
+#process-step-5-tenants {
+  background-image: url(bgs/process-5.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-5-tenants:hover {opacity: 0;}
+
+#process-step-5-tenants-info {
+  background-image: url(bgs/process-5-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+    z-index: 10;
+}
+#process-step-5-tenants-info:hover { opacity: 1;}
+
+
+
+
+/*6*/
+#process-step-6-tenants {
+  background-image: url(bgs/process-6.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-6-tenants:hover {opacity: 0;}
+
+#process-step-6-tenants-info {
+  background-image: url(bgs/process-6-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+    z-index: 10;
+}
+#process-step-6-tenants-info:hover { opacity: 1;}
+
+
+
+
+/*7*/
+#process-step-7-tenants {
+  background-image: url(bgs/process-7.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-7-tenants:hover {opacity: 0;}
+
+#process-step-7-tenants-info {
+  background-image: url(bgs/process-7-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+    z-index: 10;
+}
+#process-step-7-tenants-info:hover { opacity: 1;}
+
+
+/*8*/
+#process-step-8-tenants {
+  background-image: url(bgs/process-8.svg);
+  opacity: 1;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+}
+#process-step-8-tenants:hover {opacity: 0;}
+
+#process-step-8-tenants-info {
+  background-image: url(bgs/process-8-tenants.jpg);
+  opacity: 0;
+  transition: .5s;  
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+    z-index: 10;
+}
+#process-step-8-tenants-info:hover { opacity: 1;}
+
+
 
 
 
 .process-step p {
-  font-family: "moderat-bold";
-  font-size: 22px;
-  line-height: 26px;
-  color: #FF4433;
+
   text-align: center;
   z-index: 10;
-  padding: 0 30px;
-  margin-top: 40%;
+  padding: 0 50px;
+  vertical-align: middle;
+  margin-top: 40%
 }
 
-.process-info .process-step p {
+.process-heading {
+  font-family: "moderat-bold";
+  font-size: 20px;
+  line-height: 26px;
+  color: #FF4433;
+}
+
+.process-info {
   font-family: "moderat";
+  font-size: 16px;
+}
+
+.icon-see-container{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-see {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+}
+
+#icon-see-more {
+  position: absolute;
+  z-index: 1;
+}
+
+#icon-see-less {
+  position: absolute;
+  z-index: 500;
 }
 
 #owner-portal-bg-image { background-image: url(bgs/owners-portal.jpg); height: 680px;}
