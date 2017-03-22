@@ -703,7 +703,8 @@ header ul li a {
 /*this don't seem right*/
 .page-header h1 {margin-top: 8%;}
 
-#about-header {background-image: url(bgs/header-image-about.jpg);}
+#about-header {background-image: url(bgs/header-image-about.jpg);
+background-position: right;}
 #owners-header {background-image: url(bgs/header-image-owners.jpg);}
 #tenants-header {background-image: url(bgs/header-image-tenants.jpg);}
 #contact-header {background-image: url(bgs/header-image-contact.jpg);}
