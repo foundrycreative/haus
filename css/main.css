@@ -122,17 +122,30 @@ ul {
   opacity: .5; 
   transition: .2s;  
   transition-property:  all;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 #email-link-contact:hover {
   opacity: .7; 
-    transition: .2s;  
+  transition: .2s;  
   transition-property:  all;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
+
+.login-link {
+  text-decoration: underline;
+}
+
+.login-link:hover {
+    opacity: .7; 
+  transition: .2s;  
+  transition-property:  all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
 
 
 
