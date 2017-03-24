@@ -2223,6 +2223,21 @@ form p {font-size: 22px;}
 
 /*FOOTER*/
 
+.social-icon {
+  margin: 10px;
+  height: 26px;
+  display: inline-block;
+  opacity: .5;
+  transition: .2s;  
+  transition-property:  all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
 #logo-footer {height: 60px;}
 
 #foundry-footer-logo {
@@ -2252,7 +2267,6 @@ form p {font-size: 22px;}
 
 @media (max-width: 768px) {
   .footer-details {
-
   }
 }
 
