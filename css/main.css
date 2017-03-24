@@ -1079,19 +1079,30 @@ background-position: right top;}
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 568px) {
   .slider-bg {
     visibility: hidden;
     height: 0;
   }
     .carousel-cell{
-      height: 680px;
+      height: 650px;
+  }
+}
+
+@media (max-width: 378px) {
+  .slider-bg {
+    visibility: hidden;
+    height: 0;
+  }
+    .carousel-cell{
+      height: 810px;
   }
 }
 
 
-#peace-of-mind {background-image: url(bgs/home-slider-peace-of-mind.jpg);}
-#best-tenants {background-image: url(bgs/home-slider-best-tenants.jpg);}
+
+#peace-of-mind {background-image: url(bgs/home-slider-peace-of-mind.jpg); background-position: bottom;}
+#best-tenants {background-image: url(bgs/home-slider-best-tenants.jpg); background-position: top;}
 #guarantee-service {background-image: url(bgs/home-slider-guarantee-service.jpg);}
 #property-care {background-image: url(bgs/home-slider-property-care.jpg);}
 
@@ -1109,7 +1120,7 @@ background-position: right top;}
   width: 100%;
   float: left;
   display: inline-block;
-  z-index: 2;
+  z-index: 1;
   background-color: transparent;
 }
 
