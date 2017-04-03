@@ -907,11 +907,21 @@ background-position: right top;}
   }
 }
 
+
 @media (max-width: 375px) {
     .margin-top-60-xs { 
-    margin-top: 60px;  
+    margin-top: 60px; 
+  }
+
+}
+
+@media (max-width: 500px) {
+    .margin-bottom-10-sm { 
+   margin-bottom: 5px; 
   }
 }
+
+
 
 .margin-right-30 { margin-right: 30px; }
 .margin-right-60 { margin-right: 60px; }
