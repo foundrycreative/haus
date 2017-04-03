@@ -121,7 +121,9 @@ http://flickity.metafizzy.co
   height: 12px;
   opacity: .5;
   background: transparent;
-  border-radius: 50%;
+  border-radius: 0;
+  -webkit-clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
+  clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
 }
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
@@ -243,7 +245,9 @@ http://flickity.metafizzy.co
   height: 12px;
   opacity: .5;
   background: transparent;
-  border-radius: 50%;
+  border-radius: 0;
+    -webkit-clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
+  clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
 }
 /* fill-in selected dot */
 .testimonial-main-carousel .flickity-page-dots .dot.is-selected {
