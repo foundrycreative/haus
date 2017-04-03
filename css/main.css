@@ -1476,6 +1476,7 @@ background-position: right top;}
 
 /*PROCESS GRIDS*/
 .process-step {
+  position: relative;
   float: left;
   height: 315px;
   width: 315px;
@@ -1548,13 +1549,21 @@ background-position: right top;}
   }
 }
 
-.process-step p {
+.process-heading {
 
   text-align: center;
   z-index: 10;
   padding: 0 50px;
   vertical-align: middle;
-  margin-top: 40%
+  margin-top: calc(50% - 28px);
+}
+
+.process-info {
+  margin-top: calc(50% - 55px);
+  text-align: center;
+  z-index: 10;
+  padding: 0 30px;
+  vertical-align: middle;
 }
 
 @media (max-width: 375px) {
