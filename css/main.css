@@ -1381,27 +1381,27 @@ background-position: right top;}
 
 #our-story-bg-image { 
   background-image: url(bgs/about-our-story.jpg); 
-  height: 940px; /*this height will need to be adjusted depending on amount of text next to it*/
+  height: 780px; /*this height will need to be adjusted depending on amount of text next to it*/
 }
 
 @media (max-width: 1280px) {
   #our-story-bg-image { 
   background-image: url(bgs/about-our-story.jpg); 
-  height: 1000px;
+  height: 800px;
 }
 }
 
 @media (max-width: 1140px) {
   #our-story-bg-image { 
   background-image: url(bgs/about-our-story.jpg); 
-  height: 1050px;
+  height: 850px;
 }
 }
 
 @media (max-width: 1050px) {
   #our-story-bg-image { 
   background-image: url(bgs/about-our-story.jpg); 
-  height: 1340px;
+  height: 960px;
 }
 }
 
