@@ -1550,7 +1550,10 @@ background-position: right top;}
 }
 
 .process-heading {
-
+  font-family: "moderat-bold";
+  font-size: 20px;
+  line-height: 26px;
+  color: #FF4433;
   text-align: center;
   z-index: 10;
   padding: 0 50px;
@@ -1564,20 +1567,6 @@ background-position: right top;}
   z-index: 10;
   padding: 0 30px;
   vertical-align: middle;
-}
-
-@media (max-width: 375px) {
-  .process-step p {
-  margin-top: 34%;
-}
-}
-
-
-.process-heading {
-  font-family: "moderat-bold";
-  font-size: 20px;
-  line-height: 26px;
-  color: #FF4433;
 }
 
 .process-info p {
